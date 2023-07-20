@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Fresh Cart - Online Grocery Shopping</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="includes\AboutUs.css">
+	<link rel="stylesheet" href="includes\Universal.css">
+  </head>
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="UserRegister.html">Create An Account</a></li>
+				<li><a href="AboutUs.html">About Us</a></li>
+				<li><a href="ContactUs.html">Contact Us</a></li>
+				<li><a href="UserLogin.html">Login</a></li>
+			</ul>
+			<p id="totalCartPrice"></p>
+		</nav>
+		<div class="search-container">
+			<form class="search-form">
+				<div class="search-dropdown">
+				<input type="text" id="search" name= "text" placeholder="Search..." >
+				<div class="search-results"></div>
+			</div>
+				<button type="submit" onclick="search();">Search</button>
+			  </form>
+			</div>
+	</header>
+	<hr>
+	<main>
+		<section class="banner">
+			<h2>Welcome to Fresh Cart!</h2>
+			<p>At Fresh Cart, we are passionate about providing our customers with the freshest and highest quality produce, meats, dairy, and pantry items available. We believe that everyone should have access to healthy and delicious food, and we are dedicated to making grocery shopping more convenient, affordable, and enjoyable than ever before.</p>
+		</section>
+		
+		<section class="mission">
+			<h3>Our Mission</h3>
+			<p>Our mission at Fresh Cart is to provide our customers with a wide variety of fresh, healthy, and affordable food options, while also supporting local farmers and small businesses. We strive to create a shopping experience that is convenient, user-friendly, and personalized to each customer's unique needs and preferences.</p>
+		</section>
+		
+		<section class="team">
+			<h3>Meet Our Team</h3>
+			<ul>
+				<li><h4>Karim Samir</h4><p>Founder & CEO</p></li>
+				<li><h4>Shehab Amr</h4><p>Marketing Manager</p></li>
+				<li><h4>Ahmed Alaa</h4><p>Customer Service Representative</p></li>
+				<li><h4>Youssef Hany</h4><p>Operations Manager</p></li>
+			</ul>
+		</section>
+	</main>
+	<hr>
+	<footer>
+		<div class="footer-container">
+			<div class="logo">
+				<h2>Fresh Cart</h2>
+				<h1>Your grocery shopping made easy!</h1>
+			</div>
+			<div class="footer-links">
+				<ul>
+					<li><a href="home.html">Home</a></li>
+					<li><a href="AboutUs.html">About Us</a></li>
+					<li><a href="ContactUs.html">Contact Us</a></li>
+				</ul>
+			</div>
+		</div>
+		<hr>
+		<div class="container2">
+            <h1>Leave A Message</h1>
+            <form id="contact-form">
+                <label for="name">First Name</label>
+                <input type="text" id="Fname" name="UserFirstName" placeholder="Enter your First name" required>
+				<label for="name">Last Name</label>
+                <input type="text" id="Lname" name="UserLastName" placeholder="Enter your Last name" required>
+                
+                <label for="email">Email</label>
+                <input type="email" id="Uemail" name="UserEmail" placeholder="Enter your email" required>
+                
+                <label for="message">Review</label>
+                <textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+                
+                <button type="submit" id="submit" name="submit">Submit</button>
+            </form>
+        </div>
+    <ul>
+    <div class="footer-links">
+			<a href="#">Terms and Conditions</a>
+			<a href="#">Privacy Policy</a>
+			<a href="#">FAQ</a>
+    </ul>
+		</div>
+		<p>&copy; 2023 Fresh Cart. All rights reserved.</p>
+	</footer>
+</body>
+<script src="Scripts\Universal.js"></script>
+</html>
